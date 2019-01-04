@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { API } from "aws-amplify";
+import { Elements, StripeProvider } from "react-stripe-elements";
+import BillingForm from "../components/BillingForm";
+import config from "../config";
+import "./Settings.css";
 
 export default class Settings extends Component {
   constructor(props) {
